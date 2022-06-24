@@ -24,7 +24,7 @@ Then you will need to execute flask.
 
 Use a program like "postman" to see the outputs of the calls
 
-##JOKES ENDPOINT
+## JOKES ENDPOINT
 GET ("/")
   Output is a random joke from api.chucknorris or icanhazdadjoke.api
 GET("/Chuck")
@@ -39,7 +39,7 @@ PUT ("/?joke=&number=")
 DELETE ("/?number=")
   Delete a joke from mongodbatlas
   
-##MATH ENDPOINT
+## MATH ENDPOINT
 GET("/numbers?numeros=")
   Output is the least common multiple from numbers you write as params.
 GET("/number?numero=")
