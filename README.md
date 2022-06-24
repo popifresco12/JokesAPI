@@ -24,22 +24,22 @@ Then you will need to execute flask.
 Use a program like "postman" to see the outputs of the calls
 
 ## JOKES ENDPOINT
-GET ("/")
+### GET ("/")
   Output is a random joke from api.chucknorris or icanhazdadjoke.api
-GET("/Chuck")
+### GET("/Chuck")
   Output is a random joke from api.chucknorris
-GET("/Dad")
+### GET("/Dad")
   Output is a random joke from icanhazdadjoke api
   
-POST ("/?joke=")
+### POST ("/?joke=")
   Save in mongodbatlas a joke you write as a parameter
-PUT ("/?joke=&number=")
+### PUT ("/?joke=&number=")
   Update a joke writting as parameter the new joke and a number of the joke you want to update
-DELETE ("/?number=")
+### DELETE ("/?number=")
   Delete a joke from mongodbatlas
   
 ## MATH ENDPOINT
-GET("/numbers?numeros=")
+### GET("/numbers?numeros=")
   Output is the least common multiple from numbers you write as params.
-GET("/number?numero=")
+### GET("/number?numero=")
   Output is the number you write as param + 1.
