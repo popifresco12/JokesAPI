@@ -10,7 +10,7 @@ it's not really designed to stand alone.
 First create and activate your virtualenv - with the `venv` package on OSX or Linux, this will be:
 
 ```bash
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate
 ```
 
