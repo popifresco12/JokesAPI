@@ -10,8 +10,7 @@ it's not really designed to stand alone.
 First create and activate your virtualenv - with the `venv` package on OSX or Linux, this will be:
 
 ```bash
-python -m venv venv
-source venv/bin/activate
+.\venv\Scripts\activate
 ```
 
 With your virtualenv active, install the project locally:
