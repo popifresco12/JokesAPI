@@ -68,29 +68,26 @@ def post_joke():
     print("Insertado con exito")
     return joke
 
-@app.route('/', methods=['UPDATE'])
-def post_joke():
+@app.route('/', methods=['PUT'])
+def update_joke():
     args = request.args
     joke = args.get("joke")
-    joke_json = [
-        {"joke": joke}
-    ]
+    num = args.get("number")
 
-    result = coll.insert_many(joke_json)
-    print("Insertado con exito")
+    result = coll.update_one({"number": num}, {"$set": {"joke": joke}})
+    print("Actualizad con exito")
     return joke
 
 @app.route('/', methods=['DELETE'])
-def post_joke():
+def delete_joke():
     args = request.args
-    joke = args.get("joke")
-    joke_json = [
-        {"joke": joke}
-    ]
+    num = args.get("number")
+    joke_json = {"number": num}
+    
 
-    result = coll.insert_many(joke_json)
-    print("Insertado con exito")
-    return joke
+    result = coll.delete_one(joke_json)
+    print("Number of documents deleted: ", result.deleted_count)
+    return "num"
 
 
 
